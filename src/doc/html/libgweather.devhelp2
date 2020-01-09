@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="libgweather-3.0 Reference Manual" link="index.html" author="" name="libgweather" version="2" language="c">
+  <chapters>
+    <sub name="libgweather-3.0 Reference Manual" link="ch01.html">
+      <sub name="GWeatherLocation" link="GWeatherLocation.html"/>
+      <sub name="GWeatherTimezone" link="GWeatherTimezone.html"/>
+      <sub name="GWeatherInfo" link="libgweather-GWeatherInfo.html"/>
+      <sub name="GWeatherLocationEntry" link="GWeatherLocationEntry.html"/>
+      <sub name="GWeatherTimezoneMenu" link="GWeatherTimezoneMenu.html"/>
+    </sub>
+    <sub name="Object Hierarchy" link="object-tree.html"/>
+    <sub name="API Index" link="api-index-full.html"/>
+    <sub name="Index of deprecated symbols" link="api-index-deprecated.html"/>
+    <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+  </chapters>
+  <functions>
+    <keyword type="struct" name="GWeatherLocation" link="GWeatherLocation.html#GWeatherLocation-struct"/>
+    <keyword type="enum" name="enum GWeatherLocationLevel" link="GWeatherLocation.html#GWeatherLocationLevel"/>
+    <keyword type="function" name="gweather_location_new_world ()" link="GWeatherLocation.html#gweather-location-new-world"/>
+    <keyword type="function" name="gweather_location_ref ()" link="GWeatherLocation.html#gweather-location-ref"/>
+    <keyword type="function" name="gweather_location_unref ()" link="GWeatherLocation.html#gweather-location-unref"/>
+    <keyword type="function" name="gweather_location_serialize ()" link="GWeatherLocation.html#gweather-location-serialize"/>
+    <keyword type="function" name="gweather_location_deserialize ()" link="GWeatherLocation.html#gweather-location-deserialize"/>
+    <keyword type="function" name="gweather_location_equal ()" link="GWeatherLocation.html#gweather-location-equal"/>
+    <keyword type="function" name="gweather_location_find_by_station_code ()" link="GWeatherLocation.html#gweather-location-find-by-station-code"/>
+    <keyword type="function" name="gweather_location_get_level ()" link="GWeatherLocation.html#gweather-location-get-level"/>
+    <keyword type="function" name="gweather_location_get_parent ()" link="GWeatherLocation.html#gweather-location-get-parent"/>
+    <keyword type="function" name="gweather_location_get_children ()" link="GWeatherLocation.html#gweather-location-get-children"/>
+    <keyword type="function" name="gweather_location_ref_world ()" link="GWeatherLocation.html#gweather-location-ref-world"/>
+    <keyword type="function" name="gweather_location_get_name ()" link="GWeatherLocation.html#gweather-location-get-name"/>
+    <keyword type="function" name="gweather_location_get_sort_name ()" link="GWeatherLocation.html#gweather-location-get-sort-name"/>
+    <keyword type="function" name="gweather_location_has_coords ()" link="GWeatherLocation.html#gweather-location-has-coords"/>
+    <keyword type="function" name="gweather_location_get_coords ()" link="GWeatherLocation.html#gweather-location-get-coords"/>
+    <keyword type="function" name="gweather_location_get_distance ()" link="GWeatherLocation.html#gweather-location-get-distance"/>
+    <keyword type="function" name="gweather_location_get_country ()" link="GWeatherLocation.html#gweather-location-get-country"/>
+    <keyword type="function" name="gweather_location_get_timezone ()" link="GWeatherLocation.html#gweather-location-get-timezone"/>
+    <keyword type="function" name="gweather_location_get_timezones ()" link="GWeatherLocation.html#gweather-location-get-timezones"/>
+    <keyword type="function" name="gweather_location_get_code ()" link="GWeatherLocation.html#gweather-location-get-code"/>
+    <keyword type="function" name="gweather_location_get_city_name ()" link="GWeatherLocation.html#gweather-location-get-city-name"/>
+    <keyword type="struct" name="GWeatherTimezone" link="GWeatherTimezone.html#GWeatherTimezone-struct"/>
+    <keyword type="function" name="gweather_timezone_get_type ()" link="GWeatherTimezone.html#gweather-timezone-get-type"/>
+    <keyword type="macro" name="GWEATHER_TYPE_TIMEZONE" link="GWeatherTimezone.html#GWEATHER-TYPE-TIMEZONE:CAPS"/>
+    <keyword type="function" name="gweather_timezone_get_name ()" link="GWeatherTimezone.html#gweather-timezone-get-name"/>
+    <keyword type="function" name="gweather_timezone_get_tzid ()" link="GWeatherTimezone.html#gweather-timezone-get-tzid"/>
+    <keyword type="function" name="gweather_timezone_get_offset ()" link="GWeatherTimezone.html#gweather-timezone-get-offset"/>
+    <keyword type="function" name="gweather_timezone_has_dst ()" link="GWeatherTimezone.html#gweather-timezone-has-dst"/>
+    <keyword type="function" name="gweather_timezone_get_dst_offset ()" link="GWeatherTimezone.html#gweather-timezone-get-dst-offset"/>
+    <keyword type="function" name="gweather_timezone_ref ()" link="GWeatherTimezone.html#gweather-timezone-ref"/>
+    <keyword type="function" name="gweather_timezone_unref ()" link="GWeatherTimezone.html#gweather-timezone-unref"/>
+    <keyword type="function" name="gweather_timezone_get_utc ()" link="GWeatherTimezone.html#gweather-timezone-get-utc"/>
+    <keyword type="enum" name="enum GWeatherForecastType" link="libgweather-GWeatherInfo.html#GWeatherForecastType"/>
+    <keyword type="function" name="gweather_info_new ()" link="libgweather-GWeatherInfo.html#gweather-info-new"/>
+    <keyword type="function" name="gweather_info_new_for_world ()" link="libgweather-GWeatherInfo.html#gweather-info-new-for-world"/>
+    <keyword type="function" name="gweather_info_update ()" link="libgweather-GWeatherInfo.html#gweather-info-update"/>
+    <keyword type="function" name="gweather_info_abort ()" link="libgweather-GWeatherInfo.html#gweather-info-abort"/>
+    <keyword type="function" name="gweather_info_is_valid ()" link="libgweather-GWeatherInfo.html#gweather-info-is-valid"/>
+    <keyword type="function" name="gweather_info_network_error ()" link="libgweather-GWeatherInfo.html#gweather-info-network-error"/>
+    <keyword type="function" name="gweather_info_get_location ()" link="libgweather-GWeatherInfo.html#gweather-info-get-location"/>
+    <keyword type="function" name="gweather_info_set_location ()" link="libgweather-GWeatherInfo.html#gweather-info-set-location"/>
+    <keyword type="function" name="gweather_info_get_forecast_list ()" link="libgweather-GWeatherInfo.html#gweather-info-get-forecast-list"/>
+    <keyword type="enum" name="enum GWeatherProvider" link="libgweather-GWeatherInfo.html#GWeatherProvider"/>
+    <keyword type="function" name="gweather_info_get_enabled_providers ()" link="libgweather-GWeatherInfo.html#gweather-info-get-enabled-providers"/>
+    <keyword type="function" name="gweather_info_set_enabled_providers ()" link="libgweather-GWeatherInfo.html#gweather-info-set-enabled-providers"/>
+    <keyword type="function" name="gweather_info_get_attribution ()" link="libgweather-GWeatherInfo.html#gweather-info-get-attribution"/>
+    <keyword type="function" name="gweather_info_get_location_name ()" link="libgweather-GWeatherInfo.html#gweather-info-get-location-name"/>
+    <keyword type="function" name="gweather_info_get_icon_name ()" link="libgweather-GWeatherInfo.html#gweather-info-get-icon-name"/>
+    <keyword type="function" name="gweather_info_get_weather_summary ()" link="libgweather-GWeatherInfo.html#gweather-info-get-weather-summary"/>
+    <keyword type="function" name="gweather_info_get_temp_summary ()" link="libgweather-GWeatherInfo.html#gweather-info-get-temp-summary"/>
+    <keyword type="function" name="gweather_info_get_update ()" link="libgweather-GWeatherInfo.html#gweather-info-get-update"/>
+    <keyword type="function" name="gweather_info_get_sky ()" link="libgweather-GWeatherInfo.html#gweather-info-get-sky"/>
+    <keyword type="function" name="gweather_info_get_conditions ()" link="libgweather-GWeatherInfo.html#gweather-info-get-conditions"/>
+    <keyword type="function" name="gweather_info_get_temp ()" link="libgweather-GWeatherInfo.html#gweather-info-get-temp"/>
+    <keyword type="function" name="gweather_info_get_temp_min ()" link="libgweather-GWeatherInfo.html#gweather-info-get-temp-min"/>
+    <keyword type="function" name="gweather_info_get_temp_max ()" link="libgweather-GWeatherInfo.html#gweather-info-get-temp-max"/>
+    <keyword type="function" name="gweather_info_get_dew ()" link="libgweather-GWeatherInfo.html#gweather-info-get-dew"/>
+    <keyword type="function" name="gweather_info_get_humidity ()" link="libgweather-GWeatherInfo.html#gweather-info-get-humidity"/>
+    <keyword type="function" name="gweather_info_get_wind ()" link="libgweather-GWeatherInfo.html#gweather-info-get-wind"/>
+    <keyword type="function" name="gweather_info_get_pressure ()" link="libgweather-GWeatherInfo.html#gweather-info-get-pressure"/>
+    <keyword type="function" name="gweather_info_get_visibility ()" link="libgweather-GWeatherInfo.html#gweather-info-get-visibility"/>
+    <keyword type="function" name="gweather_info_get_apparent ()" link="libgweather-GWeatherInfo.html#gweather-info-get-apparent"/>
+    <keyword type="function" name="gweather_info_get_sunrise ()" link="libgweather-GWeatherInfo.html#gweather-info-get-sunrise"/>
+    <keyword type="function" name="gweather_info_get_sunset ()" link="libgweather-GWeatherInfo.html#gweather-info-get-sunset"/>
+    <keyword type="function" name="gweather_info_get_forecast ()" link="libgweather-GWeatherInfo.html#gweather-info-get-forecast"/>
+    <keyword type="function" name="gweather_info_get_radar ()" link="libgweather-GWeatherInfo.html#gweather-info-get-radar"/>
+    <keyword type="enum" name="enum GWeatherConditionPhenomenon" link="libgweather-GWeatherInfo.html#GWeatherConditionPhenomenon"/>
+    <keyword type="enum" name="enum GWeatherConditionQualifier" link="libgweather-GWeatherInfo.html#GWeatherConditionQualifier"/>
+    <keyword type="struct" name="struct GWeatherConditions" link="libgweather-GWeatherInfo.html#GWeatherConditions"/>
+    <keyword type="function" name="gweather_conditions_to_string ()" link="libgweather-GWeatherInfo.html#gweather-conditions-to-string"/>
+    <keyword type="enum" name="enum GWeatherSky" link="libgweather-GWeatherInfo.html#GWeatherSky"/>
+    <keyword type="function" name="gweather_sky_to_string ()" link="libgweather-GWeatherInfo.html#gweather-sky-to-string"/>
+    <keyword type="enum" name="enum GWeatherWindDirection" link="libgweather-GWeatherInfo.html#GWeatherWindDirection"/>
+    <keyword type="function" name="gweather_wind_direction_to_string ()" link="libgweather-GWeatherInfo.html#gweather-wind-direction-to-string"/>
+    <keyword type="typedef" name="GWeatherMoonLatitude" link="libgweather-GWeatherInfo.html#GWeatherMoonLatitude"/>
+    <keyword type="typedef" name="GWeatherMoonPhase" link="libgweather-GWeatherInfo.html#GWeatherMoonPhase"/>
+    <keyword type="enum" name="enum GWeatherDistanceUnit" link="libgweather-GWeatherInfo.html#GWeatherDistanceUnit"/>
+    <keyword type="enum" name="enum GWeatherPressureUnit" link="libgweather-GWeatherInfo.html#GWeatherPressureUnit"/>
+    <keyword type="enum" name="enum GWeatherSpeedUnit" link="libgweather-GWeatherInfo.html#GWeatherSpeedUnit"/>
+    <keyword type="enum" name="enum GWeatherTemperatureUnit" link="libgweather-GWeatherInfo.html#GWeatherTemperatureUnit"/>
+    <keyword type="function" name="gweather_info_get_value_update ()" link="libgweather-GWeatherInfo.html#gweather-info-get-value-update"/>
+    <keyword type="function" name="gweather_info_get_value_sky ()" link="libgweather-GWeatherInfo.html#gweather-info-get-value-sky"/>
+    <keyword type="function" name="gweather_info_get_value_conditions ()" link="libgweather-GWeatherInfo.html#gweather-info-get-value-conditions"/>
+    <keyword type="function" name="gweather_info_get_value_temp ()" link="libgweather-GWeatherInfo.html#gweather-info-get-value-temp"/>
+    <keyword type="function" name="gweather_info_get_value_temp_min ()" link="libgweather-GWeatherInfo.html#gweather-info-get-value-temp-min"/>
+    <keyword type="function" name="gweather_info_get_value_temp_max ()" link="libgweather-GWeatherInfo.html#gweather-info-get-value-temp-max"/>
+    <keyword type="function" name="gweather_info_get_value_dew ()" link="libgweather-GWeatherInfo.html#gweather-info-get-value-dew"/>
+    <keyword type="function" name="gweather_info_get_value_apparent ()" link="libgweather-GWeatherInfo.html#gweather-info-get-value-apparent"/>
+    <keyword type="function" name="gweather_info_get_value_wind ()" link="libgweather-GWeatherInfo.html#gweather-info-get-value-wind"/>
+    <keyword type="function" name="gweather_info_get_value_pressure ()" link="libgweather-GWeatherInfo.html#gweather-info-get-value-pressure"/>
+    <keyword type="function" name="gweather_info_get_value_visibility ()" link="libgweather-GWeatherInfo.html#gweather-info-get-value-visibility"/>
+    <keyword type="function" name="gweather_info_get_value_sunrise ()" link="libgweather-GWeatherInfo.html#gweather-info-get-value-sunrise"/>
+    <keyword type="function" name="gweather_info_get_value_sunset ()" link="libgweather-GWeatherInfo.html#gweather-info-get-value-sunset"/>
+    <keyword type="function" name="gweather_info_next_sun_event ()" link="libgweather-GWeatherInfo.html#gweather-info-next-sun-event"/>
+    <keyword type="function" name="gweather_info_get_value_moonphase ()" link="libgweather-GWeatherInfo.html#gweather-info-get-value-moonphase"/>
+    <keyword type="function" name="gweather_info_get_upcoming_moonphases ()" link="libgweather-GWeatherInfo.html#gweather-info-get-upcoming-moonphases"/>
+    <keyword type="struct" name="GWeatherLocationEntry" link="GWeatherLocationEntry.html#GWeatherLocationEntry-struct"/>
+    <keyword type="struct" name="GWeatherLocationEntryClass" link="GWeatherLocationEntry.html#GWeatherLocationEntryClass"/>
+    <keyword type="function" name="gweather_location_entry_new ()" link="GWeatherLocationEntry.html#gweather-location-entry-new"/>
+    <keyword type="function" name="gweather_location_entry_set_location ()" link="GWeatherLocationEntry.html#gweather-location-entry-set-location"/>
+    <keyword type="function" name="gweather_location_entry_get_location ()" link="GWeatherLocationEntry.html#gweather-location-entry-get-location"/>
+    <keyword type="function" name="gweather_location_entry_has_custom_text ()" link="GWeatherLocationEntry.html#gweather-location-entry-has-custom-text"/>
+    <keyword type="function" name="gweather_location_entry_set_city ()" link="GWeatherLocationEntry.html#gweather-location-entry-set-city"/>
+    <keyword type="property" name="The &quot;location&quot; property" link="GWeatherLocationEntry.html#GWeatherLocationEntry--location"/>
+    <keyword type="property" name="The &quot;top&quot; property" link="GWeatherLocationEntry.html#GWeatherLocationEntry--top"/>
+    <keyword type="struct" name="GWeatherTimezoneMenu" link="GWeatherTimezoneMenu.html#GWeatherTimezoneMenu-struct"/>
+    <keyword type="struct" name="GWeatherTimezoneMenuClass" link="GWeatherTimezoneMenu.html#GWeatherTimezoneMenuClass"/>
+    <keyword type="function" name="gweather_timezone_menu_new ()" link="GWeatherTimezoneMenu.html#gweather-timezone-menu-new"/>
+    <keyword type="function" name="gweather_timezone_menu_set_tzid ()" link="GWeatherTimezoneMenu.html#gweather-timezone-menu-set-tzid"/>
+    <keyword type="function" name="gweather_timezone_menu_get_tzid ()" link="GWeatherTimezoneMenu.html#gweather-timezone-menu-get-tzid"/>
+    <keyword type="property" name="The &quot;top&quot; property" link="GWeatherTimezoneMenu.html#GWeatherTimezoneMenu--top"/>
+    <keyword type="property" name="The &quot;tzid&quot; property" link="GWeatherTimezoneMenu.html#GWeatherTimezoneMenu--tzid"/>
+    <keyword type="constant" name="GWEATHER_LOCATION_WORLD" link="GWeatherLocation.html#GWEATHER-LOCATION-WORLD:CAPS"/>
+    <keyword type="constant" name="GWEATHER_LOCATION_REGION" link="GWeatherLocation.html#GWEATHER-LOCATION-REGION:CAPS"/>
+    <keyword type="constant" name="GWEATHER_LOCATION_COUNTRY" link="GWeatherLocation.html#GWEATHER-LOCATION-COUNTRY:CAPS"/>
+    <keyword type="constant" name="GWEATHER_LOCATION_ADM1" link="GWeatherLocation.html#GWEATHER-LOCATION-ADM1:CAPS"/>
+    <keyword type="constant" name="GWEATHER_LOCATION_ADM2" link="GWeatherLocation.html#GWEATHER-LOCATION-ADM2:CAPS"/>
+    <keyword type="constant" name="GWEATHER_LOCATION_CITY" link="GWeatherLocation.html#GWEATHER-LOCATION-CITY:CAPS"/>
+    <keyword type="constant" name="GWEATHER_LOCATION_WEATHER_STATION" link="GWeatherLocation.html#GWEATHER-LOCATION-WEATHER-STATION:CAPS"/>
+    <keyword type="constant" name="GWEATHER_LOCATION_DETACHED" link="GWeatherLocation.html#GWEATHER-LOCATION-DETACHED:CAPS"/>
+    <keyword type="constant" name="GWEATHER_FORECAST_STATE" link="libgweather-GWeatherInfo.html#GWEATHER-FORECAST-STATE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_FORECAST_ZONE" link="libgweather-GWeatherInfo.html#GWEATHER-FORECAST-ZONE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_FORECAST_LIST" link="libgweather-GWeatherInfo.html#GWEATHER-FORECAST-LIST:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PROVIDER_NONE" link="libgweather-GWeatherInfo.html#GWEATHER-PROVIDER-NONE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PROVIDER_METAR" link="libgweather-GWeatherInfo.html#GWEATHER-PROVIDER-METAR:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PROVIDER_IWIN" link="libgweather-GWeatherInfo.html#GWEATHER-PROVIDER-IWIN:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PROVIDER_YAHOO" link="libgweather-GWeatherInfo.html#GWEATHER-PROVIDER-YAHOO:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PROVIDER_YR_NO" link="libgweather-GWeatherInfo.html#GWEATHER-PROVIDER-YR-NO:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PROVIDER_ALL" link="libgweather-GWeatherInfo.html#GWEATHER-PROVIDER-ALL:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_INVALID" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-INVALID:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_NONE" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-NONE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_DRIZZLE" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-DRIZZLE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_RAIN" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-RAIN:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_SNOW" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-SNOW:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_SNOW_GRAINS" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-SNOW-GRAINS:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_ICE_CRYSTALS" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-ICE-CRYSTALS:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_ICE_PELLETS" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-ICE-PELLETS:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_HAIL" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-HAIL:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_SMALL_HAIL" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-SMALL-HAIL:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_UNKNOWN_PRECIPITATION" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-UNKNOWN-PRECIPITATION:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_MIST" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-MIST:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_FOG" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-FOG:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_SMOKE" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-SMOKE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_VOLCANIC_ASH" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-VOLCANIC-ASH:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_SAND" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-SAND:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_HAZE" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-HAZE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_SPRAY" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-SPRAY:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_DUST" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-DUST:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_SQUALL" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-SQUALL:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_SANDSTORM" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-SANDSTORM:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_DUSTSTORM" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-DUSTSTORM:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_FUNNEL_CLOUD" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-FUNNEL-CLOUD:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_TORNADO" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-TORNADO:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_DUST_WHIRLS" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-DUST-WHIRLS:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PHENOMENON_LAST" link="libgweather-GWeatherInfo.html#GWEATHER-PHENOMENON-LAST:CAPS"/>
+    <keyword type="constant" name="GWEATHER_QUALIFIER_INVALID" link="libgweather-GWeatherInfo.html#GWEATHER-QUALIFIER-INVALID:CAPS"/>
+    <keyword type="constant" name="GWEATHER_QUALIFIER_NONE" link="libgweather-GWeatherInfo.html#GWEATHER-QUALIFIER-NONE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_QUALIFIER_VICINITY" link="libgweather-GWeatherInfo.html#GWEATHER-QUALIFIER-VICINITY:CAPS"/>
+    <keyword type="constant" name="GWEATHER_QUALIFIER_LIGHT" link="libgweather-GWeatherInfo.html#GWEATHER-QUALIFIER-LIGHT:CAPS"/>
+    <keyword type="constant" name="GWEATHER_QUALIFIER_MODERATE" link="libgweather-GWeatherInfo.html#GWEATHER-QUALIFIER-MODERATE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_QUALIFIER_HEAVY" link="libgweather-GWeatherInfo.html#GWEATHER-QUALIFIER-HEAVY:CAPS"/>
+    <keyword type="constant" name="GWEATHER_QUALIFIER_SHALLOW" link="libgweather-GWeatherInfo.html#GWEATHER-QUALIFIER-SHALLOW:CAPS"/>
+    <keyword type="constant" name="GWEATHER_QUALIFIER_PATCHES" link="libgweather-GWeatherInfo.html#GWEATHER-QUALIFIER-PATCHES:CAPS"/>
+    <keyword type="constant" name="GWEATHER_QUALIFIER_PARTIAL" link="libgweather-GWeatherInfo.html#GWEATHER-QUALIFIER-PARTIAL:CAPS"/>
+    <keyword type="constant" name="GWEATHER_QUALIFIER_THUNDERSTORM" link="libgweather-GWeatherInfo.html#GWEATHER-QUALIFIER-THUNDERSTORM:CAPS"/>
+    <keyword type="constant" name="GWEATHER_QUALIFIER_BLOWING" link="libgweather-GWeatherInfo.html#GWEATHER-QUALIFIER-BLOWING:CAPS"/>
+    <keyword type="constant" name="GWEATHER_QUALIFIER_SHOWERS" link="libgweather-GWeatherInfo.html#GWEATHER-QUALIFIER-SHOWERS:CAPS"/>
+    <keyword type="constant" name="GWEATHER_QUALIFIER_DRIFTING" link="libgweather-GWeatherInfo.html#GWEATHER-QUALIFIER-DRIFTING:CAPS"/>
+    <keyword type="constant" name="GWEATHER_QUALIFIER_FREEZING" link="libgweather-GWeatherInfo.html#GWEATHER-QUALIFIER-FREEZING:CAPS"/>
+    <keyword type="constant" name="GWEATHER_QUALIFIER_LAST" link="libgweather-GWeatherInfo.html#GWEATHER-QUALIFIER-LAST:CAPS"/>
+    <keyword type="constant" name="GWEATHER_SKY_INVALID" link="libgweather-GWeatherInfo.html#GWEATHER-SKY-INVALID:CAPS"/>
+    <keyword type="constant" name="GWEATHER_SKY_CLEAR" link="libgweather-GWeatherInfo.html#GWEATHER-SKY-CLEAR:CAPS"/>
+    <keyword type="constant" name="GWEATHER_SKY_BROKEN" link="libgweather-GWeatherInfo.html#GWEATHER-SKY-BROKEN:CAPS"/>
+    <keyword type="constant" name="GWEATHER_SKY_SCATTERED" link="libgweather-GWeatherInfo.html#GWEATHER-SKY-SCATTERED:CAPS"/>
+    <keyword type="constant" name="GWEATHER_SKY_FEW" link="libgweather-GWeatherInfo.html#GWEATHER-SKY-FEW:CAPS"/>
+    <keyword type="constant" name="GWEATHER_SKY_OVERCAST" link="libgweather-GWeatherInfo.html#GWEATHER-SKY-OVERCAST:CAPS"/>
+    <keyword type="constant" name="GWEATHER_SKY_LAST" link="libgweather-GWeatherInfo.html#GWEATHER-SKY-LAST:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_INVALID" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-INVALID:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_VARIABLE" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-VARIABLE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_N" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-N:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_NNE" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-NNE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_NE" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-NE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_ENE" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-ENE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_E" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-E:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_ESE" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-ESE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_SE" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-SE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_SSE" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-SSE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_S" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-S:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_SSW" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-SSW:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_SW" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-SW:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_WSW" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-WSW:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_W" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-W:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_WNW" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-WNW:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_NW" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-NW:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_NNW" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-NNW:CAPS"/>
+    <keyword type="constant" name="GWEATHER_WIND_LAST" link="libgweather-GWeatherInfo.html#GWEATHER-WIND-LAST:CAPS"/>
+    <keyword type="constant" name="GWEATHER_DISTANCE_UNIT_INVALID" link="libgweather-GWeatherInfo.html#GWEATHER-DISTANCE-UNIT-INVALID:CAPS"/>
+    <keyword type="constant" name="GWEATHER_DISTANCE_UNIT_DEFAULT" link="libgweather-GWeatherInfo.html#GWEATHER-DISTANCE-UNIT-DEFAULT:CAPS"/>
+    <keyword type="constant" name="GWEATHER_DISTANCE_UNIT_METERS" link="libgweather-GWeatherInfo.html#GWEATHER-DISTANCE-UNIT-METERS:CAPS"/>
+    <keyword type="constant" name="GWEATHER_DISTANCE_UNIT_KM" link="libgweather-GWeatherInfo.html#GWEATHER-DISTANCE-UNIT-KM:CAPS"/>
+    <keyword type="constant" name="GWEATHER_DISTANCE_UNIT_MILES" link="libgweather-GWeatherInfo.html#GWEATHER-DISTANCE-UNIT-MILES:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PRESSURE_UNIT_INVALID" link="libgweather-GWeatherInfo.html#GWEATHER-PRESSURE-UNIT-INVALID:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PRESSURE_UNIT_DEFAULT" link="libgweather-GWeatherInfo.html#GWEATHER-PRESSURE-UNIT-DEFAULT:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PRESSURE_UNIT_KPA" link="libgweather-GWeatherInfo.html#GWEATHER-PRESSURE-UNIT-KPA:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PRESSURE_UNIT_HPA" link="libgweather-GWeatherInfo.html#GWEATHER-PRESSURE-UNIT-HPA:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PRESSURE_UNIT_MB" link="libgweather-GWeatherInfo.html#GWEATHER-PRESSURE-UNIT-MB:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PRESSURE_UNIT_MM_HG" link="libgweather-GWeatherInfo.html#GWEATHER-PRESSURE-UNIT-MM-HG:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PRESSURE_UNIT_INCH_HG" link="libgweather-GWeatherInfo.html#GWEATHER-PRESSURE-UNIT-INCH-HG:CAPS"/>
+    <keyword type="constant" name="GWEATHER_PRESSURE_UNIT_ATM" link="libgweather-GWeatherInfo.html#GWEATHER-PRESSURE-UNIT-ATM:CAPS"/>
+    <keyword type="constant" name="GWEATHER_SPEED_UNIT_INVALID" link="libgweather-GWeatherInfo.html#GWEATHER-SPEED-UNIT-INVALID:CAPS"/>
+    <keyword type="constant" name="GWEATHER_SPEED_UNIT_DEFAULT" link="libgweather-GWeatherInfo.html#GWEATHER-SPEED-UNIT-DEFAULT:CAPS"/>
+    <keyword type="constant" name="GWEATHER_SPEED_UNIT_MS" link="libgweather-GWeatherInfo.html#GWEATHER-SPEED-UNIT-MS:CAPS"/>
+    <keyword type="constant" name="GWEATHER_SPEED_UNIT_KPH" link="libgweather-GWeatherInfo.html#GWEATHER-SPEED-UNIT-KPH:CAPS"/>
+    <keyword type="constant" name="GWEATHER_SPEED_UNIT_MPH" link="libgweather-GWeatherInfo.html#GWEATHER-SPEED-UNIT-MPH:CAPS"/>
+    <keyword type="constant" name="GWEATHER_SPEED_UNIT_KNOTS" link="libgweather-GWeatherInfo.html#GWEATHER-SPEED-UNIT-KNOTS:CAPS"/>
+    <keyword type="constant" name="GWEATHER_SPEED_UNIT_BFT" link="libgweather-GWeatherInfo.html#GWEATHER-SPEED-UNIT-BFT:CAPS"/>
+    <keyword type="constant" name="GWEATHER_TEMP_UNIT_INVALID" link="libgweather-GWeatherInfo.html#GWEATHER-TEMP-UNIT-INVALID:CAPS"/>
+    <keyword type="constant" name="GWEATHER_TEMP_UNIT_DEFAULT" link="libgweather-GWeatherInfo.html#GWEATHER-TEMP-UNIT-DEFAULT:CAPS"/>
+    <keyword type="constant" name="GWEATHER_TEMP_UNIT_KELVIN" link="libgweather-GWeatherInfo.html#GWEATHER-TEMP-UNIT-KELVIN:CAPS"/>
+    <keyword type="constant" name="GWEATHER_TEMP_UNIT_CENTIGRADE" link="libgweather-GWeatherInfo.html#GWEATHER-TEMP-UNIT-CENTIGRADE:CAPS"/>
+    <keyword type="constant" name="GWEATHER_TEMP_UNIT_FAHRENHEIT" link="libgweather-GWeatherInfo.html#GWEATHER-TEMP-UNIT-FAHRENHEIT:CAPS"/>
+  </functions>
+</book>
